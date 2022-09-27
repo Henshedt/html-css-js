@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #36883a;
+    color: #ffffff;
+
+}
+
+header {
+    margin: 40px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 200px;
+}
+
+
+main {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.left-side div h2 {
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.left-side div iframe {
+    margin-bottom: 40px;
+}
+
+.left-side div p {
+    width: 500px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-main {
+    background-color: #003624;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.form-main form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+}
+
+.form-main input {
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.form-main textarea {
+    height: 100px;
+    resize: vertical;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.form-main button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: rgb(255, 94, 0);
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: rgba(255, 94, 0, 0.7);
+}
+
+
+.right-side div h2 {
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.right-side div {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+}
+
+.right-side div p {
+    width: 500px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-wrap: wrap;
+    }
+    .right-side {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .left-side{
+        margin-left: 48px;
+    }
+
+    .left-side iframe{
+        width: 420px;
+        justify-self: center;
+        align-self: center;      
+
+    }
+}
+
+@media screen and (max-width: 350px) {
+    body { 
+        width: 100wv;  
+    }
+
+    .left-side div p {
+        width: 300px;
+    }
+
+    .left-side iframe {
+        width: 450px;
+        margin-left: -32px;
+    }
+    
+    .right-side {
+        margin-left: 20px;
+    }
+
+    .right-side div h2 {
+        margin-left: 30px;
+    }
+
+
+
+    .right-side div p {
+        width: 300px;
+        margin-left: 30px;
+    }
+}
